@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal Rimal</title>
+    <!-- Favicon Instructions:
+         1. Create a favicon.ico (16x16 or 32x32) or favicon.png file.
+         2. Place it in the root directory (same folder as index.html).
+         3. Uncomment the link below or adjust href if needed.
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">Ujjwal Rimal</a>
+                <!-- Or use an image: <a href="index.html"><img src="images/logo.png" alt="Your Channel Name Logo"></a> -->
+            </div>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu-list">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="vlogs.html">Vlogs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Optional: <li><a href="blog.html">Blog</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1 class="hero-title" style="letter-spacing: 30px; color: #ffd700;">BORN TO RIDE</h1>
+                <p class="hero-subtitle">Exploring the world, sharing stories, one vlog at a time.</p>
+                <a href="#latest-vlog" class="btn btn-primary">Watch Latest Vlog</a>
+                <a href="vlogs.html" class="btn btn-secondary">Explore All Vlogs</a>
+            </div>
+            <a href="#latest-vlog" class="scroll-down-arrow" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Latest Vlog Section -->
+        <section id="latest-vlog" class="latest-vlog-section container section-padding fade-in-section">
+            <h2>Latest Adventure</h2>
+            <div class="video-wrapper">
+                <!-- Replace with your actual latest YouTube video embed code -->
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/9VmZ3Tj8iZw" title="Ultimate Fun Day! 🏊‍♂️🔥 Swimming, Masu 🍗 &amp; Good Vibes!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+            <p class="video-description">A short description about your latest vlog goes here. Mention key highlights or what viewers can expect.</p>
+       
+        </section>
+
+        <!-- Featured Vlogs Section -->
+        <section class="featured-vlogs-section section-padding fade-in-section">
+            <div class="container">
+                <h2>Featured Vlogs</h2>
+                <div class="vlog-grid">
+                    <!-- Vlog Card 1 (Placeholder) -->
+                    <article class="vlog-card">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail14.webp" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Ultimate Fun Day! 🏊‍♂️🔥 Swimming, Masu 🍗 & Good Vibes!</h3>
+                            <p>Brief description or category (e.g., Travel - Japan)</p>
+                            <a href="https://youtu.be/Q21XvFfeyDw" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <!-- Vlog Card 2 (Placeholder) -->
+                    <article class="vlog-card">
+                         <div class="video-placeholder" data-video-id="VIDEO_ID_2">
+                             <img src="images/thumbnail/thumbnail11.webp" alt="Thumbnail for Vlog 2 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Our Natural Swimming pool 😻</h3>
+                            <p>Brief description or category (e.g., Daily Life)</p>
+                            <a href="https://youtu.be/7RxMPL8nV4w" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <!-- Vlog Card 3 (Placeholder) -->
+                     <article class="vlog-card">
+                         <div class="video-placeholder" data-video-id="VIDEO_ID_3">
+                             <img src="images/thumbnail/thumbnail10.jpg" alt="Thumbnail for Vlog 3 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Cycle Kineko Din Mai Bigriyo 😅 || Full Off-road ||Babbal Maja Bhayo || Ujjwal Rimal Vlogs</h3>
+                            <p>Brief description or category (e.g., Tech Review)</p>
+                           <a href="https://youtu.be/gQJ3LgKAeaI" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+                    <!-- Add more featured vlogs cards if desired -->
+                </div>
+                <div class="text-center">
+                    <a href="vlogs.html" class="btn btn-secondary">View All Vlogs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Teaser Section -->
+        <section class="about-teaser section-padding fade-in-section">
+            <div class="container about-teaser-content">
+                 <img src="images/ur.jpg" alt="Ujjwal Rimal" class="about-photo" loading="lazy">
+                 <div>
+                    <h2>Hi, I'm Ujjwal Rimal !</h2>
+                    <p>Driven by curiosity and a passion for [Your Passion - e.g., storytelling, travel, creativity], I started sharing my journey on YouTube. Here, you'll get a glimpse behind the lens...</p>
+                    <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+                 </div>
+            </div>
+        </section>
+
+         <!-- Testimonials Section -->
+        <section class="testimonials-section section-padding fade-in-section">
+            <div class="container">
+                <h2 class="text-center">What Viewers Are Saying</h2>
+                <div class="testimonial-grid">
+                    <blockquote class="testimonial-card">
+                        <p>"Absolutely love the energy and insights in these vlogs! Inspired me to plan my own trip."</p>
+                        <footer>- Happy Viewer Name</footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Your editing style is amazing, and the stories are so engaging. Keep up the great work!"</p>
+                        <footer>- Subscriber Username</footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Learned so much from the gear review vlog. Very helpful and honest."</p>
+                        <footer>- Another Viewer</footer>
+                    </blockquote>
+                    <!-- Add more or remove if you don't have testimonials yet -->
+                </div>
+            </div>
+        </section>
+
+        <!-- As Seen On Section (Optional) -->
+        <section class="as-seen-on-section section-padding fade-in-section">
+            <div class="container text-center">
+                <h2>As Seen On / Featured In</h2>
+                <div class="featured-logos">
+                    <!-- Replace with actual logos (ensure proper usage rights) or remove section -->
+                    <img src="images/brand/redbull.png" alt="Featured Publication/Brand 1 Logo" loading="lazy">
+                    <img src="images/brand/canyon.svg" alt="Featured Publication/Brand 2 Logo" loading="lazy">
+                    <img src="images/brand/sick.webp" alt="Featured Publication/Brand 3 Logo" loading="lazy">
+                    <img src="images/brand/youtube.png" alt="Featured Publication/Brand 4 Logo" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Subscribe Section -->
+        <section class="cta-section section-padding text-center fade-in-section">
+             <div class="container">
+                 <h2>Join the Adventure!</h2>
+                 <p>Subscribe and follow along for new vlogs, behind-the-scenes, and more.</p>
+                 <a href="https://www.youtube.com/@ujjwal_rimal" class="btn btn-youtube" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-youtube"></i> Subscribe on YouTube
+                 </a>
+                 <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+         <div class="container footer-content">
+            <div class="social-links">
+                 <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                 <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                 <!-- Add other relevant social links -->
+                 <!-- Example: <a href="YOUR_TIKTOK_LINK" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a> -->
+            </div>
+            <p>© <span id="year"></span> Ujjwal Rimal. All Rights Reserved.</p>
+            <!-- Optional: Footer Nav -->
+            <!-- <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav> -->
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

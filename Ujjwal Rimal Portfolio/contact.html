@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Ujjwal Rimal</title>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+         <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">Ujjwal Rimal</a>
+            </div>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu-list">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vlogs.html">Vlogs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+         <section class="page-header section-padding">
+            <div class="container text-center">
+                <h1>Get In Touch</h1>
+                <p>Questions, collaborations, or just want to say hi? Reach out!</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container contact-layout">
+
+                <div class="contact-form-container fade-in-section">
+                    <h2>Send a Message</h2>
+                    <!--
+                        IMPORTANT: Replace '#' with your actual form processing endpoint URL
+                        (e.g., from Formspree, Netlify Forms, Basin, or your own backend script).
+                        Ensure method="POST" is appropriate for your endpoint.
+                    -->
+                    <form id="contact-form" action="https://formspree.io/f/xldjaglq" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" required autocomplete="off"></textarea>
+                        </div>
+                        <!-- Add hidden fields if required by your form service (e.g., Netlify needs name="form-name") -->
+                        <!-- <input type="hidden" name="form-name" value="contact-form"> -->
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <span id="contact-form-status" class="form-status" aria-live="polite"></span> <!-- For feedback -->
+                    </form>
+                     <p class="form-notice">Your message will be sent securely. I'll do my best to respond promptly!</p>
+                </div>
+
+                <div class="contact-details fade-in-section">
+                    <h2>Contact Info</h2>
+                    <p>For general inquiries, feel free to use the form. For business proposals, sponsorships, or urgent matters, please use the email below.</p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <strong>General/Business:</strong> <a href="mailto:sixmile2025@gmail.com">sixmile2025@gmail.com</a></li>
+                        <!-- Optional: Add location if relevant -->
+                        <!-- <li><i class="fas fa-map-marker-alt"></i> <strong>Based In:</strong> City, Country</li> -->
+                    </ul>
+                    <h3>Follow Me Online:</h3>
+                     <div class="social-links-contact">
+                        <a href="https://www.youtube.com/@ujjwal_rimal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                         <!-- Add other relevant socials -->
+                        <!-- <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+         <div class="container footer-content">
+            <div class="social-links">
+                 <a href="https://www.youtube.com/@ujjwal_rimal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                 <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© <span id="year"></span> Ujjwal Rimal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+     <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
