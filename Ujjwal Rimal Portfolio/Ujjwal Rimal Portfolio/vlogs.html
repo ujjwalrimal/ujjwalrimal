@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlogs - Ujjwal Rimal</title>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">Ujjwal Rimal</a>
+            </div>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu-list">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vlogs.html" class="active">Vlogs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section-padding">
+            <div class="container text-center">
+                <h1>Explore All Vlogs</h1>
+                <p>Dive into the full collection of adventures, stories, and experiences.</p>
+            </div>
+        </section>
+
+        <section class="vlog-archive section-padding">
+            <div class="container">
+                <!-- Filtering Buttons -->
+                <div class="vlog-filters text-center" id="vlog-filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                    <button class="filter-btn" data-filter="daily">Daily Life</button>
+                    <button class="filter-btn" data-filter="tech">Tech/Gear</button>
+                    <button class="filter-btn" data-filter="challenge">Challenges</button>
+                    <!-- Add more categories as needed - MAKE SURE data-filter VALUE IS UNIQUE AND LOWERCASE -->
+                    <!-- Example: <button class="filter-btn" data-filter="food">Food</button> -->
+                </div>
+
+                <!-- Vlog Grid -->
+                <div class="vlog-grid" id="vlog-grid-items">
+                    <!-- Add ALL your vlog cards here -->
+                    <!-- Make sure each card has the correct data-category -->
+
+                    <article class="vlog-card fade-in-section" data-category="daily">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail14.webp" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Ultimate Fun Day! 🏊‍♂️🔥 Swimming, Masu 🍗 & Good Vibes!</h3>
+                            <p>Daily Life - Solighoptey Swimming</p>
+                            <a href="https://youtu.be/9VmZ3Tj8iZw" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="travel">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail13.webp" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>I LOST CONTROL… And Then It Happened! 😱Cycle Ride Gone Wrong! 🚴💥</h3>
+                            <p>Travel - Cycle Crash</p>
+                            <a href="https://youtu.be/Q21XvFfeyDw" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="tech">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail12.jpg" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Upgrading My Gear! New Helmet & MotoVlog Ride</h3>
+                            <p>Tech - Upgrading My new Gear</p>
+                            <a href="https://youtu.be/ooEwz33zFrA" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="daily">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail11.webp" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Our Natural Swimming pool 😻</h3>
+                            <p>Daily Life - Chilling My Life in my swimming pool</p>
+                            <a href="https://youtu.be/7RxMPL8nV4w" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="tech">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail10.jpg" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Cycle Kineko Din Mai Bigriyo 😅 || Full Off-road ||Babbal Maja Bhayo </h3>
+                            <p>Tech - Cycle Kineko Dinmai Kam Tamam</p>
+                            <a href="https://youtu.be/gQJ3LgKAeaI" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="challenge">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail9.jpg" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Referee Give me Yellow Card 🤬 || Feri Haat Katyo😭 || Babbal Maja Aayo Football Khelda😅</h3>
+                            <p>Challenge - Football Khelda Yesto Bhayo</p>
+                            <a href="https://youtu.be/gQJ3LgKAeaI" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="challenge">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail8.jpg" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Cycle Wheelie Gone Wrong || WHEELIE CRASH !!</h3>
+                            <p>Challenges - Cycle Wheelie Gone Wrong WHEELIE CRASH</p>
+                            <a href="https://youtu.be/OdD1agHhTFU" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="daily">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail7.jpg" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Sunset View</h3>
+                            <p>Daily Life - Sunset</p>
+                            <a href="https://youtu.be/DC-J40STS9Y" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="travel">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail6.jpg" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Tractor Vlog</h3>
+                            <p>Travel - Tractor</p>
+                            <a href="https://youtu.be/s7op3gFKAPc" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="travel">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_1">
+                             <img src="images/thumbnail/thumbnail5.webp" alt="Thumbnail for Vlog 1 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Guess Where Is This Place ?</h3>
+                            <p>Travel - Guys sanga Ghumdai</p>
+                            <a href="https://youtu.be/A8s6X7fQi-A" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <article class="vlog-card fade-in-section" data-category="challenge">
+                         <div class="video-placeholder" data-video-id="VIDEO_ID_2">
+                             <img src="images/thumbnail/thumbnail4.jpg" alt="Thumbnail for Vlog 2 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Skate Khelda Suiiii 🔥</h3>
+                            <p>Challenges - Suiiii Challenge</p>
+                            <a href="https://youtu.be/BhHBYCy7Wrg" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                     <article class="vlog-card fade-in-section" data-category="travel">
+                         <div class="video-placeholder" data-video-id="VIDEO_ID_3">
+                             <img src="images/thumbnail/thumbnail3.jpg" alt="Thumbnail for Vlog 3 Title" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Backflip In Phewa Lake 🤷🏻‍♂️🔥</h3>
+                            <p>Travel - Phewa Lake</p>
+                           <a href="https://youtu.be/ZKvSTpvE0Mw" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                     <article class="vlog-card fade-in-section" data-category="travel">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_4">
+                             <img src="images/thumbnail/thumbnail2.jpg" alt="Thumbnail for Exploring the Alps" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>Nepal vs West Indies A cricket final match Vlog || Kushal Malla hits amazing runs</h3>
+                            <p>Travel - cricket</p>
+                            <a href="https://youtu.be/FTmxKoKvjlQ" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                     <article class="vlog-card fade-in-section" data-category="travel">
+                        <div class="video-placeholder" data-video-id="VIDEO_ID_5">
+                             <img src="images/thumbnail/thumbnail1.jpg" alt="Thumbnail for 24 Hour Challenge Vlog" loading="lazy">
+                             <div class="play-button"><i class="fab fa-youtube"></i></div>
+                             <div class="video-loading-indicator"></div>
+                        </div>
+                        <div class="vlog-card-content">
+                            <h3>My First Vlog</h3>
+                            <p>First Vlog Video</p>
+                            <a href="https://youtu.be/HV2_YhObLBQ" target="_blank" rel="noopener noreferrer" class="read-more">Watch on YouTube →</a>
+                        </div>
+                    </article>
+
+                    <!-- Add MANY more vlog cards here, assigning the correct data-category -->
+
+                </div> <!-- End .vlog-grid -->
+
+                <div id="no-vlogs-message" class="no-vlogs-message text-center hide">
+                    <p>🙁 No vlogs found matching that category. Try selecting 'All'!</p>
+                </div>
+
+                <!-- Optional: Add Pagination or a "Load More" Button here if you have many vlogs -->
+                <!-- <div class="pagination text-center"> <button class="btn btn-primary" id="load-more-vlogs">Load More</button> </div> -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+         <div class="container footer-content">
+            <div class="social-links">
+                 <a href="https://www.youtube.com/@ujjwal_rimal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                 <a href="https://www.instagram.com/ujjwalrimalofficial/profilecard/?igsh=aGNjdXdkOHJ6ZTJr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>© <span id="year"></span> Your Name/Channel Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
